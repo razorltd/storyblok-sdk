@@ -1,16 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.1</TargetFramework>
+        <TargetFrameworks>netstandard2.0</TargetFrameworks>
         <PackageId>Storyblok.Sdk</PackageId>
-        <Version>1.0.1</Version>
+        <Version>1.1.1</Version>
         <Authors>Laura Smythe</Authors>
         <Company>Razor Ltd</Company>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Html.Abstractions" Version="2.2.0" />
-        <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.0" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="2.2.0" />
         <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
         <PackageReference Include="Refit" Version="4.6.107" />
     </ItemGroup>
