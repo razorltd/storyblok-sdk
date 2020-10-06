@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
-
+using Humanizer;
 using Microsoft.Extensions.Options;
 
 using Storyblok.Sdk.Options;
@@ -31,6 +31,7 @@ namespace Storyblok.Sdk
             var query = HttpUtility.ParseQueryString(uriBuilder.Query);
             query["token"] = _options.Token;
             query["cv"] = GetCacheTimestamp(_options.Cache).ToString();
+            query["version"] = _options.Version.ToString().Underscore();
 
             uriBuilder.Query = query.ToString();
             request.RequestUri = uriBuilder.Uri;

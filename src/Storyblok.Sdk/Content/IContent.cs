@@ -12,5 +12,8 @@ namespace Storyblok.Sdk.Content
 
         [JsonProperty("component")]
         string Component { get; set; }
+
+        [JsonProperty("_editable")]
+        string Editable { get; set; }
     }
 }
