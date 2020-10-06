@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0</TargetFrameworks>
         <PackageId>Storyblok.Sdk</PackageId>
-        <Version>1.1.1</Version>
+        <Version>1.2.0</Version>
         <Authors>Laura Smythe</Authors>
         <Company>Razor Ltd</Company>
     </PropertyGroup>
